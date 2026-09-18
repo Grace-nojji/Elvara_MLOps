@@ -4,7 +4,7 @@ import httpx
 import os
 from datetime import datetime, timedelta
 
-API_URL = os.getenv("API_URL", "elvaramlops-production-adf6.up.railway.app/predict-risk")
+API_URL = os.getenv("API_URL", "https://elvaramlops-production-adf6.up.railway.app/predict-risk")
 
 def generate_random_patient(pid: int):
     # 40% chance of generating a high/moderate deterioration risk patient
